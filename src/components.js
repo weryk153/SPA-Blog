@@ -10,14 +10,14 @@ const Navbar = () => (
       Home
     </Link>
 
-    <ul className="nav__group">
-      <li className="nav__li btn">
-        <Link className="nav__link" to="/blog">
+    <ul className="nav-group">
+      <li className="nav-li btn">
+        <Link className="nav-link" to="/blog">
           Blog
         </Link>
       </li>
-      <li className="nav__li btn">
-        <Link className="nav__link" to="/about">
+      <li className="nav-li btn">
+        <Link className="nav-link" to="/about">
           About
         </Link>
       </li>
@@ -32,7 +32,7 @@ function First(props) {
     <section>
       {data.map(e => (
         <Link key={e.id} className="list link" to={`/blog/${e.id}`}>
-          <div className="list__title">
+          <div className="list-title">
             {e.title}
           </div>
         </Link>

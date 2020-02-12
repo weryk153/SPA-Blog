@@ -1,7 +1,7 @@
 /* ----- variables ------*/
 /* ----- function ------*/
 /* ----- extends ------*/
-.list__title, .list, .nav__link, .btn {
+.list-title, .list, .nav-link, .btn {
   transition: all 0.3s;
 }
 
@@ -70,26 +70,26 @@ a {
 .nav .logo {
   cursor: pointer;
 }
-.nav__group {
+.nav-group {
   margin: 0;
   display: flex;
 }
-.nav__li {
+.nav-li {
   position: relative;
   top: 0;
   cursor: pointer;
 }
-.nav__li:hover {
+.nav-li:hover {
   top: -3px;
 }
-.nav__li + .nav__li {
+.nav-li + .nav-li {
   margin-left: 20px;
 }
-.nav__link:hover {
+.nav-link:hover {
   color: #de9119;
 }
 
-.main__title {
+.main-title {
   text-align: center;
   font-size: 48px;
   padding: 50px 0;
@@ -114,10 +114,10 @@ a {
   left: -10px;
   border-left: 5px solid #ffe5d2;
 }
-.list.link:hover > .list__title {
+.list.link:hover > .list-title {
   color: #fd5f50;
 }
-.list__title {
+.list-title {
   font-size: 22px;
   margin: 10px 5px;
 }
