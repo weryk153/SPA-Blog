@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-one-expression-per-line */
+'use strict'
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';

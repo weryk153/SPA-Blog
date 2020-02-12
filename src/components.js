@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-one-expression-per-line */
+'use strict'
 
 import React from 'react';
 import { Link } from 'react-router-dom';
