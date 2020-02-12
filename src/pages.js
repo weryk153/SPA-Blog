@@ -10,7 +10,7 @@ import '../css/style.css';
 const About = () => (
   <div className="about">
     <main>
-      <h1 className="main__title">About Me</h1>
+      <h1 className="main-title">About Me</h1>
       <section>
         <article>
           <p>
@@ -48,7 +48,7 @@ class Blog extends Component {
     return (
       <div className="blog">
         <main>
-          <h1 className="main__title">Blog Posts</h1>
+          <h1 className="main-title">Blog Posts</h1>
           <Switch>
             {data.map(e => (
               <Route
@@ -71,7 +71,7 @@ class Blog extends Component {
 const Home = () => (
   <div>
     <main>
-      <h1 className="main__title">Home</h1>
+      <h1 className="main-title">Home</h1>
     </main>
   </div>
 );
