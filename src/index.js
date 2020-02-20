@@ -9,7 +9,7 @@ import '../css/style.css';
 
 
 ReactDom.render(
-  <BrowserRouter basename="/blog">
+  <BrowserRouter basename="/">
     <Switch>
       <App />
     </Switch>
