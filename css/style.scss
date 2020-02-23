@@ -1,10 +1,10 @@
 /* ----- variables ------*/
 
 $colors: (
-  primary : #ffc79f,
-  secondary: #de9119,
-  danger  : #fd5f50,
-  gray    : #ccc
+  primary : #d8d8d8,
+  secondary: #60bbf0,
+  danger  : #3e92ff,
+  gray    : rgb(204, 204, 204)
 );
 $font-family-normal: "Microsoft JhengHei", sans-serif;
 
@@ -16,17 +16,12 @@ $font-family-normal: "Microsoft JhengHei", sans-serif;
 
 /* ----- extends ------*/
 %transition {
-  transition: all .3s;
+  transition: all 0.3s;
 }
+
 %center {
   margin-right: auto;
   margin-left: auto;
-}
-
-/* ----- pseudo ----- */
-@mixin pseudo($display: block, $content: '') {
-    content: $content;
-    display: $display;
 }
 
 /* ----- layout ------*/
@@ -86,10 +81,13 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px;
+  color: darken(color(primary), 15%);
+  background-color: lighten(color(primary), 15%);
   box-shadow: 1px 1px 5px lighten(color(gray), 5%);
   z-index: 1;
 
   .logo {
+    font-weight: 500;
     cursor: pointer;
   }
 
@@ -120,11 +118,14 @@ a {
 }
 .main-title {
   text-align: center;
-  font-size: 48px;
+  font-size: 32px;
   padding: 50px 0;
-  color: darken(color(primary), 15%);
-  background-color: lighten(color(primary), 15%);
 }
+
+.main-title p{
+  text-align: center;
+}
+
 .list {
   position: relative;
   left: 0;
@@ -138,6 +139,7 @@ a {
     border-left: 0 solid lighten(color(primary), 10%);
     cursor: pointer;
     display: block;
+
     &:hover {
       left: -10px;
       border-left: 5px solid lighten(color(primary), 10%);
@@ -147,7 +149,6 @@ a {
       }
     }
   }
-
 
   &-title {
     font-size: 22px;

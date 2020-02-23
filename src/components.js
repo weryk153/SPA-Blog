@@ -7,18 +7,18 @@ import { Link } from 'react-router-dom';
 const Navbar = () => (
   <nav className="nav">
     <Link className="logo btn" to="/">
-      Home
+      Kuren
     </Link>
 
     <ul className="nav-group">
       <li className="nav-li btn">
         <Link className="nav-link" to="/blog">
-          Blog
+          文章列表
         </Link>
       </li>
       <li className="nav-li btn">
         <Link className="nav-link" to="/about">
-          About
+          關於我
         </Link>
       </li>
     </ul>

@@ -7,24 +7,6 @@ import { First, Page } from './components';
 import '../css/normalize.css';
 import '../css/style.scss';
 
-const About = () => (
-  <div className="about">
-    <main>
-      <h1 className="main-title">About Me</h1>
-      <section>
-        <article>
-          <p>
-            SPA 練習作品
-          </p>
-          <p>
-            Yeah
-          </p>
-        </article>
-      </section>
-    </main>
-  </div>
-);
-
 class Blog extends Component {
   constructor(props) {
     super(props);
@@ -48,7 +30,6 @@ class Blog extends Component {
     return (
       <div className="blog">
         <main>
-          <h1 className="main-title">Blog Posts</h1>
           <Switch>
             {data.map(e => (
               <Route
@@ -71,7 +52,31 @@ class Blog extends Component {
 const Home = () => (
   <div>
     <main>
-      <h1 className="main-title">Home</h1>
+      <section>
+        <article>
+          <p>
+            寫點東西吧...
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+);
+
+const About = () => (
+  <div className="about">
+    <main>
+      <h1 className="main-title">About Me</h1>
+      <section>
+        <article>
+          <p>
+            SPA 練習作品
+          </p>
+          <p>
+            Yeah
+          </p>
+        </article>
+      </section>
     </main>
   </div>
 );
