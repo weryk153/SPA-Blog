@@ -93,12 +93,12 @@ a {
     cursor: pointer;
   }
 
-  &__group {
+  &-group {
     margin: 0;
     display: flex;
   }
 
-  &__li {
+  &-li {
     position: relative;
     top: 0;
     cursor: pointer;
@@ -111,14 +111,14 @@ a {
       margin-left: 20px;
     }
   }
-  &__link {
+  &-link {
     @extend %transition;
     &:hover {
       color: color(secondary);
     }
   }
 }
-.main__title {
+.main-title {
   text-align: center;
   font-size: 48px;
   padding: 50px 0;
@@ -142,14 +142,14 @@ a {
       left: -10px;
       border-left: 5px solid lighten(color(primary), 10%);
 
-      & > .list__title {
+      & > .list-title {
         color: color(danger);
       }
     }
   }
 
 
-  &__title {
+  &-title {
     font-size: 22px;
     margin: 10px 5px;
     @extend %transition;
