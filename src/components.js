@@ -12,7 +12,7 @@ const Navbar = () => (
 
     <ul className="nav-group">
       <li className="nav-li btn">
-        <Link className="nav-link" to="/blog">
+        <Link className="nav-link" to="/posts">
           文章列表
         </Link>
       </li>
@@ -31,7 +31,7 @@ function First(props) {
   return (
     <section>
       {data.map(e => (
-        <Link key={e.id} className="list link" to={`/blog/${e.id}`}>
+        <Link key={e.id} className="list link" to={`/posts/${e.id}`}>
           <div className="list-title">
             {e.title}
           </div>

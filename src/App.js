@@ -3,7 +3,7 @@
 
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { Home, About, Blog } from './pages';
+import { Home, About, Post } from './pages';
 import { Navbar } from './components';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
         </header>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/blog" component={Blog} />
+        <Route path="/posts" component={Post} />
       </div>
     );
   }

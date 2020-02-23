@@ -7,7 +7,7 @@ import { First, Page } from './components';
 import '../css/normalize.css';
 import '../css/style.scss';
 
-class Blog extends Component {
+class Post extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,7 +28,7 @@ class Blog extends Component {
     const { data } = this.state;
     const { match } = this.props;
     return (
-      <div className="blog">
+      <div className="post">
         <main>
           <Switch>
             {data.map(e => (
@@ -84,5 +84,5 @@ const About = () => (
 export {
   Home,
   About,
-  Blog,
+  Post,
 };
