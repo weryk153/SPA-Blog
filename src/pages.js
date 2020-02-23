@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { First, Page } from './components';
 import '../css/normalize.css';
-import '../css/style.css';
+import '../css/style.scss';
 
 const About = () => (
   <div className="about">
