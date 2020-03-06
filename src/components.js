@@ -9,7 +9,6 @@ const Navbar = () => (
     <Link className="logo btn" to="/">
       Kuren
     </Link>
-
     <ul className="nav-group">
       <li className="nav-li btn">
         <Link className="nav-link" to="/posts">
@@ -26,7 +25,7 @@ const Navbar = () => (
 );
 
 
-function First(props) {
+function Pagelist(props) {
   const { data } = props;
   return (
     <section>
@@ -43,7 +42,6 @@ function First(props) {
 
 function Page(props) {
   const { dataItem } = props;
-
   return (
     <section className="page">
       <article className="list">
@@ -58,4 +56,4 @@ function Page(props) {
   );
 }
 
-export { Navbar, First, Page };
+export { Navbar, Pagelist, Page };

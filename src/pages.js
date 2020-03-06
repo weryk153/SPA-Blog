@@ -2,8 +2,9 @@
 'use strict'
 
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Switch, Route } from 'react-router-dom';
-import { First, Page } from './components';
+import { Pagelist, Page } from './components';
 import '../css/normalize.css';
 import '../css/style.scss';
 
@@ -16,11 +17,11 @@ class Post extends Component {
   }
 
   componentDidMount = async () => {
-    const dataAPI = await fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(response => response.json());
-
-    this.setState({
-      data: dataAPI,
+    await axios.get('https://jsonplaceholder.typicode.com/posts')
+    .then(response => {
+      this.setState({
+        data: response.data,
+      });
     });
   }
 
@@ -41,14 +42,14 @@ class Post extends Component {
             <Route
               path={`${match.path}`}
               data={data}
-              render={() => <First data={data} />}
+              render={() => <Pagelist data={data} />}
             />
           </Switch>
         </main>
       </div>
     );
   }
-}
+  }
 const Home = () => (
   <div>
     <main>
